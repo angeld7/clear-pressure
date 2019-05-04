@@ -7,6 +7,7 @@ import {ModeratorComponent} from "./moderator/moderator.component";
 import {ChatComponent} from "./chat/chat.component";
 
 const routes: Routes = [
+  {path: '', component: HomepageComponent},
   {path: 'home', component: HomepageComponent},
   {path: 'signup', component: SignUpComponent},
   {path: 'quiz', component: QuizComponent},
