@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  showLogin:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleLogin() {
+    this.showLogin = !this.showLogin;
   }
 
 }

@@ -1,5 +1,5 @@
   <div class="container-fluid">
-    <div style="display:none">
+    <div *ngIf="showLogin">
       <form>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
@@ -9,12 +9,12 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" routerLink="welcome">Submit</button>
       </form>
     </div>
   	<div>
   		<img src="http://placehold.it/2000x500?text=Hero" class="img-fluid" />
-  		<button style="position:absolute;top:0;right:0;">Login</button>
+  		<button style="position:absolute;top:0;right:0;" (click)="toggleLogin()">Login</button>
   	</div>
   	<div class="bg-secondary">
   		<h2>What?</h2>
@@ -31,7 +31,7 @@
   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor est velit impedit, nam autem tempora deleniti delectus iste porro nostrum ut harum sunt quam facilis labore, quidem. Nulla, facilis, odio.</p>
   			</div>
   			<div class="col-md-6">
-  				<button>Sign Up!</button>
+  				<button routerLink="signup">Sign Up!</button>
   			</div>
   		</div>
   	</div>
